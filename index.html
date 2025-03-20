@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        File: index.html
+        Purpose: Main page for the Leaf Shape Explorer, showcasing a grid of leaf images from St. Margaret's Bay.
+        Links to individual leaf pages with drawings and additional details.
+        Author: Saeed Haweeleh
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf Shape Explorer</title>
@@ -11,21 +17,23 @@
     <h2 class="text-2xl font-semibold text-purple-600 mb-16 text-center">Discover the Leaves of St. Margaret's Bay!</h2>
     <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
         <a href="yellow_birch.html" class="flex justify-center">
-            <img src="yellow_birch_photo.jpg" alt="Yellow Birch Leaf" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
+            <img src="yellow_birch_photo.jpg" alt="Photo of a Yellow Birch leaf" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
         </a>
         <a href="sugar_maple.html" class="flex justify-center">
-            <img src="sugar_maple_photo.jpg" alt="Sugar Maple Leaf" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
+            <img src="sugar_maple_photo.jpg" alt="Photo of a Sugar Maple leaf" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
         </a>
         <a href="striped_maple.html" class="flex justify-center">
-            <img src="striped_maple_photo.jpg" alt="Striped Maple Leaf" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
+            <img src="striped_maple_photo.jpg" alt="Photo of a Striped Maple leaf" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
         </a>
         <a href="red_oak.html" class="flex justify-center">
-            <img src="red_oak_photo.jpg" alt="Red Oak Leaf" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
+            <img src="red_oak_photo.jpg" alt="Photo of a Red Oak leaf" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
         </a>
         <a href="white_pine.html" class="flex justify-center">
-            <img src="white_pine_photo.jpg" alt="White Pine Needles" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
+            <img src="white_pine_photo.jpg" alt="Photo of White Pine needles" class="w-32 h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
         </a>
     </div>
+    <!-- Audio controls -->
+    <button id="muteButton" class="mt-6 bg-gray-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-600 transition-colors">Mute</button>
     <audio id="backgroundMusic" src="background_music.mp3" loop></audio>
     <audio id="clickSound" src="click.wav"></audio>
     <script src="script.js"></script>
