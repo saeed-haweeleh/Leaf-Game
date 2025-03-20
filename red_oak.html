@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        File: red_oak.html
+        Purpose: Displays detailed information and a drawing of the Red Oak leaf.
+        Author: Saeed Haweeleh
+        Notes: Links back to index.html via Play Again button. Uses script.js for interactivity.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf Shape Explorer - Red Oak</title>
@@ -9,9 +15,11 @@
 <body onload="setup()" id="page" class="bg-yellow-100 flex flex-col items-center justify-center min-h-screen p-4">
     <div class="bg-white p-9 rounded-lg shadow-lg text-center">
         <h1 class="text-3xl font-bold text-pink-600 mb-4">Red Oak</h1>
-        <img src="red_oak_drawing.png" class="w-64 h-64 object-contain mb-6" alt="Red Oak Drawing">
+        <img src="red_oak_drawing.png" class="w-64 h-64 object-contain mb-6" alt="Drawing of a Red Oak leaf">
     </div>
     <button id="playAgain" class="mt-6 bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors">Play Again</button>
+    <!-- Audio controls -->
+    <button id="muteButton" class="mt-6 bg-gray-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-600 transition-colors">Mute</button>
     <audio id="backgroundMusic" src="background_music2.mp3" loop></audio>
     <audio id="clickSound" src="click.wav"></audio>
     <script src="script.js"></script>
