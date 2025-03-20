@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        File: striped_maple.html
+        Purpose: Displays detailed information and a drawing of the Striped Maple leaf.
+        Author: Saeed Haweeleh
+        Notes: Links back to index.html via Play Again button. Uses script.js for interactivity.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf Shape Explorer - Striped Maple</title>
@@ -9,9 +15,11 @@
 <body onload="setup()" id="page" class="bg-yellow-100 flex flex-col items-center justify-center min-h-screen p-4">
     <div class="bg-white p-9 rounded-lg shadow-lg text-center">
         <h1 class="text-3xl font-bold text-pink-600 mb-4">Striped Maple</h1>
-        <img src="striped_maple_drawing.png" class="w-64 h-64 object-contain mb-6" alt="Striped Maple Drawing">
+        <img src="striped_maple_drawing.png" class="w-64 h-64 object-contain mb-6" alt="Drawing of a Striped Maple leaf">
     </div>
     <button id="playAgain" class="mt-6 bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors">Play Again</button>
+    <!-- Audio controls -->
+    <button id="muteButton" class="mt-6 bg-gray-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-600 transition-colors">Mute</button>
     <audio id="backgroundMusic" src="background_music2.mp3" loop></audio>
     <audio id="clickSound" src="click.wav"></audio>
     <script src="script.js"></script>
