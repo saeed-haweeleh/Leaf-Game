@@ -5,19 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf Shape Explorer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background-color: #fef9c3; /* Light yellow background */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 1rem;
-        }
-    </style>
 </head>
-<body>
+<body onload="setup()" id="page" class="bg-yellow-100 flex flex-col items-center justify-center min-h-screen p-4">
     <h1 class="text-4xl font-bold text-pink-600 mb-2 text-center">Leaf Shape Explorer</h1>
     <h2 class="text-2xl font-semibold text-purple-600 mb-6 text-center">Discover the Leaves of St. Margaret's Bay!</h2>
     <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
