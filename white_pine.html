@@ -5,42 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf Shape Explorer - White Pine</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background-color: #fef9c3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 1rem;
-            flex-direction: column;
-        }
-        .container {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            text-align: center;
-            width: fit-content;
-            max-width: 16rem;
-        }
-        .container img {
-            display: block;
-            margin: 0 auto;
-        }
-        #playAgain {
-            margin-top: 1.5rem;
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
+<body onload="setup()" id="page" class="bg-yellow-100 flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-9 rounded-lg shadow-lg text-center">
         <h1 class="text-3xl font-bold text-pink-600 mb-4">White Pine</h1>
         <img src="white_pine_drawing.png" class="w-64 h-64 object-contain mb-6" alt="White Pine Drawing">
     </div>
-    <button id="playAgain" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors">Play Again</button>
+    <button id="playAgain" class="mt-6 bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors">Play Again</button>
     <audio id="backgroundMusic" src="background_music2.mp3" loop></audio>
     <audio id="clickSound" src="click.wav"></audio>
     <script src="script.js"></script>
